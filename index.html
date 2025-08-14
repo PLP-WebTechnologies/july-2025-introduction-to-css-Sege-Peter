@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sege Peter's Developer Journey – HTML5 enhanced content and form with validation.">
+    <meta name="keywords" content="HTML5, Forms, Validation, Accessibility, Lists, Tables, Media, Developer Portfolio">
+    <meta name="author" content="Sege Peter">
+    <title>Enhanced Form | Sege Peter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sege Peter – Enhanced HTML5 Demo</h1>
+        <p>Explore my skills, projects, media, and try my contact form.</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development: HTML5, CSS3, JavaScript, React</li>
+                <li>Software Development: Python, Java, SQL</li>
+                <li>Graphic & Web Design: Adobe Illustrator, Photoshop, Canva</li>
+                <li>Data Analytics & Visualization: Excel, Power BI, Tableau</li>
+                <li>Digital Communication & Social Media Management</li>
+            </ul>
+            <table border="1" summary="Skill levels table">
+                <caption>Skills Overview</caption>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 & CSS3</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Maseno Campus Finder:</strong> Lost & Found system for students.</li>
+                <li><strong>Skope Designs:</strong> Portfolio and branding hub.</li>
+                <li><strong>EdTechGuardianHub:</strong> Platform supporting digital learning.</li>
+                <li><strong>WeCare Youth Campaigns:</strong> Social media and digital campaigns.</li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Example image of development project" width="400" height="200">
+                <figcaption>Sample image representing my work.</figcaption>
+            </figure>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video width="400" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form action="#" method="post" novalidate>
+
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required minlength="3" autocomplete="name">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="email">
+
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 700 000000" pattern="\+?[0-9\s]{10,15}" required autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5" autocomplete="username">
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+                    <br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required minlength="6">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="subscription">Subscribe to newsletter:</label>
+                    <input type="checkbox" id="subscription" name="subscription">
+
+                    <br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here" required></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sege Peter. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
